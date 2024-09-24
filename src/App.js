@@ -11,7 +11,13 @@ function App() {
     const fetchOccupancy = async () => {
       try {
         const response = await axios.get(
-          "https://a702-134-241-33-1.ngrok-free.app/api/occupancy/api/occupancy"
+          "https://6683-134-241-225-84.ngrok-free.app/api/occupancy",
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true",
+            },
+          }
         );
         const { resOccupancy, resOccupancyHistory } = response.data;
         console.log(response);
