@@ -14,6 +14,7 @@ function App() {
           "https://a702-134-241-33-1.ngrok-free.app/api/occupancy/api/occupancy"
         );
         const { resOccupancy, resOccupancyHistory } = response.data;
+        console.log(response);
         setOccupancy(resOccupancy);
         setOccupancyHistory(resOccupancyHistory);
         setIsLoading(false);
@@ -25,8 +26,6 @@ function App() {
 
     fetchOccupancy();
   }, []);
-
-  console.log(occupancyHistory);
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
