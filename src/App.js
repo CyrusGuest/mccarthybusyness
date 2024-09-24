@@ -10,7 +10,9 @@ function App() {
   useEffect(() => {
     const fetchOccupancy = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/occupancy");
+        const response = await axios.get(
+          "https://a702-134-241-33-1.ngrok-free.app/api/occupancy/api/occupancy"
+        );
         const { resOccupancy, resOccupancyHistory } = response.data;
         setOccupancy(resOccupancy);
         setOccupancyHistory(resOccupancyHistory);
