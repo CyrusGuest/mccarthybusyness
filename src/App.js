@@ -61,8 +61,9 @@ function App() {
           </div>
 
           <p className="text-black">
-            This is the current estimated busyness of the dining hall based on
-            noise levels. Last 5 readings:{" "}
+            NOT ASSOCIATED WITH FSU, COMPLETELY INDEPENDENT - This is the
+            current estimated busyness of the dining hall based on noise levels.
+            Last 5 readings:{" "}
             {occupancyHistory.map((value) => {
               return value + "%, ";
             })}
