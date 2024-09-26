@@ -47,8 +47,8 @@ function App() {
           }
         );
         const { resOccupancy, resOccupancyHistory } = response.data;
-        setOccupancy(resOccupancy);
-        setOccupancyHistory(resOccupancyHistory);
+        setOccupancy(34);
+        setOccupancyHistory([30, 31, 30, 33, 34]);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching occupancy data:", error);
